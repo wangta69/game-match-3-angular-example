@@ -1,0 +1,23 @@
+<div id="wrapper">
+
+    <div class="container">
+        <div style="position: absolute; top: 40px; width: 100%; z-index: 999">
+        </div>
+        <div class="contents" #contents>
+            <canvas #gameCanvas
+                width="640" height="480"
+                (mousedown)="onMouseDown($event)"
+                (document:mousemove)="onMouseMove($event)"
+                (document:mouseup)="onMouseUp()"
+                (document:mouseout)="onMouseOut()"
+                >
+            </canvas>
+
+            <!-- <app-gamelinks></app-gamelinks> -->
+        </div>
+
+    </div>
+    <footer>
+    </footer>
+</div><!-- #wrapper -->
+
